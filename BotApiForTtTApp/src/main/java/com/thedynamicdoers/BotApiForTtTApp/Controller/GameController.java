@@ -16,7 +16,6 @@ public class GameController {
     public ResponseEntity<MoveResponse> getComputerMove() {
         // Return response with computer's move
         int computerMove =botService.getComputerOpponentMove();
-        botService.makeMove(computerMove, "O");
         MoveResponse response = new MoveResponse(computerMove);
         return ResponseEntity.ok().body(response);
     }

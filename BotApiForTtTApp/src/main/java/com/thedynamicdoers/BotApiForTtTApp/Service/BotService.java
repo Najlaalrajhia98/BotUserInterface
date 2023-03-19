@@ -28,7 +28,4 @@ public class BotService {
         }
         return availableSquares.get(new Random().nextInt(availableSquares.size()));
     }
-    public void makeMove(int index, String player) {
-        gameBoard[index] = player;
-    }
 }
