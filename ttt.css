@@ -1,0 +1,91 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	font-family: cursive;
+}
+
+
+h1, .message, .restart-btn {
+	font-family: cursive;
+	text-shadow: 1px 0.3px 0px #0b285bc3;
+}
+
+/* Rest of the CSS code remains the same */
+body {
+	background-color: rgb(7, 79, 82);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+
+h1 {
+	font-size: 1.8rem;
+	margin-bottom: 2rem;
+	text-align: center;
+	color: rgb(237, 220, 220);
+	
+}
+
+.board {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+}
+
+.row {
+	display: flex;
+}
+
+.cell {
+	width: 100px;
+	height: 100px;
+	margin: 0rem;
+	background-color: rgb(34, 33, 33);
+	border: 2px solid rgb(255, 255, 255);
+	font-size: 4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.cell--x:before {
+
+	content: "X";
+	color: #ffffff; 
+}
+
+.cell--o:before {
+	content: "O";
+	color: #ffffff; 
+}
+
+.cell:hover {
+	background-color: rgb(210, 210, 210);
+}
+
+.message {
+	font-family: cursive;
+	font-size: 1.5rem;
+	margin-top: 1rem;
+	text-align: center;
+	color: #e7ecee;
+}
+
+.restart-btn {
+	margin-top: 1rem;
+	font-size: 1.5rem;
+	padding: 0.5rem 1rem;
+	background-color: rgb(0, 0, 0);
+	color: rgb(248, 248, 248);
+	cursor: pointer;
+}
+
+.restart-btn:hover {
+	background-color: rgba(0, 0, 0, 0.256);
+}
